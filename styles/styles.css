@@ -1,0 +1,196 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/*nav bar*/
+#navbar{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#logo{
+  margin: 10px 30px;
+}
+#logo img{
+  height: 30px;
+  margin: 3px 5px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+#navbar ul{
+  display: flex;
+}
+#navbar::before{
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 20%;
+  top:0%;
+  left:0%;
+  width: 100%;
+  z-index: -1;
+  opacity: .5;
+}
+#navbar ul li{
+  list-style: none;
+  font-size: 1.3rem;
+}
+#navbar ul li a{ 
+  display: block;
+  color: white;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+#navbar ul li a:hover{ 
+  color: black;
+  background-color: white;
+  
+}
+/*home section*/
+#home{
+  display: flex;
+  flex-direction: column;
+  padding: 2px 200px;
+  justify-content: center;
+  align-items: center;
+  height: 330px;
+}
+#home::before{
+    content: "";
+    background:url("../image/bg1.jpg") no-repeat
+     center center/cover;
+    position: absolute;
+    height: 68%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    opacity: .9;
+}
+#home h1{
+  color: white;
+  text-align: center;
+}
+#home p{
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.h-primary{
+  font-size: 3.8rem;
+  padding: 12px;
+}
+.h-secondary{
+  font-size: 2.8rem;
+  padding: 12px;
+}
+.btn{
+  padding  : 6px 10px;
+  border: 2px solid white;
+  color: white;
+  background-color: rgb(97, 37, 37);
+  margin: 15px;
+  font-size: 1rem;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+/*service section*/
+.services-container{
+  text-align: center;
+  margin-top:50px;
+}
+#services{
+  display: flex;
+  justify-content: space-between;
+
+}
+#services .box{
+  border: 2px solid brown; 
+  border-radius: 12px;
+  margin-right: 10px;
+  padding: 7px;
+  background-color: lightgray;
+}
+
+#services .box img{
+  height: 150px;
+  display: block;
+  margin: auto;
+}
+
+
+.clients {
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+#client-section{
+  margin-top: 20px;
+  height: 340px;
+  text-align: center;
+ position: relative;
+}
+#client-section::before{
+  content: "";
+  position: absolute;
+  background-image: url("../image/bbb.jpg");
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  left:0%
+}
+.client-items img{
+  height: 120px;
+  padding: 35px;
+}
+
+#contact{
+ position: relative;
+ text-align: center;
+}
+#contact::before{
+  content: "";
+  position: absolute;
+  background:url("../image/contact.jpg") no-repeat center center/cover; 
+  left: 0%;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: .7;
+}
+#contact-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group{
+  font-size: 3.3vb;
+}
+.form-group input{
+  width: 30vw;
+  border-radius: .4rem;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+.button button{
+  border-radius: .4rem;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.button button:hover{
+background-color: darkgray;
+color: whitesmoke;
+opacity: .8;
+transition: .3s;
+}
+footer{
+  background-color: black;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+
